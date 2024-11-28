@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.MainController" spacing="10" alignment="CENTER" prefHeight="600" prefWidth="900">
+    <children>
+        <Button fx:id="scanBarcodeButton" text="Scan Barcode" onAction="#handleScanBarcode" />
+        <TextArea fx:id="productDetailsTextArea" prefHeight="200.0" prefWidth="700.0" editable="false"
+                  promptText="Product Details will be displayed here..." />
+        <TextArea fx:id="ethicalDetailsTextArea" prefHeight="200.0" prefWidth="700.0" editable="false"
+                  promptText="Ethical Details will be displayed here..." />
+    </children>
+</VBox>
